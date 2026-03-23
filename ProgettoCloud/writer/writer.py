@@ -15,7 +15,7 @@ def main():
         
         data_string = f"Temp: {temp}C, CO2: {co2}ppm"
         r.lpush("sensor_data", data_string)
-        r.ltrim("sensor_data", 0, 9) # Teniamo solo gli ultimi 10 messaggi
+        r.ltrim("sensor_data", 0, 9) 
         
         print(f"Inviato: {data_string}")
         time.sleep(5)
