@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: redis
-        image: redis:7-alpine # Leggera e perfetta per ARM
+        image: redis:7-alpine 
         ports:
         - containerPort: 6379
